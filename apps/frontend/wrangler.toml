@@ -1,0 +1,17 @@
+name = "gesture"
+account_id = "a3e7a062183c6c3d1edf2a8ad5467428"
+
+main = "./.cloudflare/worker.js"
+site.bucket = "./.cloudflare/public"
+
+build.command = "bun run build"
+
+routes = [
+  { pattern = "gesture.mersnn621.com", custom_domain = true }
+]
+
+compatibility_date = "2021-11-12"
+compatibility_flags = [ "nodejs_compat" ]
+
+
+workers_dev = false
